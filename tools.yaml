@@ -1,0 +1,107 @@
+---
+name: Hacking
+children:
+- name: Network
+  children:
+  - name: Nmap
+    description: Utility for network discovery and security auditing.
+    url: https://nmap.org
+  - name: Naabu 
+    description: Port scanning tool written in Go that allows you to enumerate valid ports for hosts in a fast and reliable manner.
+    url: https://github.com/projectdiscovery/naabu
+  - name: Subfinder 
+    description: Subdomain discovery tool that discovers valid subdomains for websites by using passive online sources.
+    url: https://github.com/projectdiscovery/subfinder
+- name: Web
+  children:
+  - name: Scanners
+    children:
+    - name: Nuclei
+      description: Fast and customisable vulnerability scanner.
+      url: https://github.com/projectdiscovery/nuclei
+    - name: WhatWeb
+      description: Recognises web technologies.
+      url: https://github.com/urbanadventurer/WhatWeb
+  - name: Fuzzers
+    children:
+    - name: Ffuf
+      description: A fast web fuzzer written in Go.
+      url: https://github.com/ffuf/ffuf
+    - name: Gobuster
+      description: Brute-force URIs including directories and files as well as DNS subdomains.
+      url: https://github.com/OJ/gobuster
+  - name: SQL Injection
+    children:
+    - name: SQLmap
+      description: Automates the process of detecting and exploiting SQL.
+      url: https://github.com/sqlmapproject/sqlmap
+    - name: PayloadsAllTheThings
+      type: learning
+      description: A list of useful payloads and bypasses for SQL injection.
+      url: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection
+  - name: SSRF
+    children:
+    - name: 1u.ms
+      description: DNS rebinding utility.
+      url: http://1u.ms
+    - name: Gopherus
+      description: Generate Gopher payloads.
+      url: https://github.com/tarunkant/Gopherus
+    - name: Hookbin
+      description: Capture and inspect HTTP requests.
+      url: https://hookbin.com/
+    - name: PayloadsAllTheThings
+      type: learning
+      description: A list of useful payloads and bypasses for SSRF.
+      url: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Request%20Forgery
+- name: Repositories
+  children:
+  - name: GitHacker
+    description: Exploit the .git folder leakage vulnerability.
+    url: https://github.com/WangYihang/GitHacker
+  - name: TruffleHog
+    description: Find leaked credentials.
+    url: https://github.com/trufflesecurity/trufflehog
+- name: OSINT
+  children:
+  - name: Passwords
+    children:
+    - name: Have I Been Pwned
+      description: Check if your email or phone is in a data breach.
+      url: https://haveibeenpwned.com
+    - name: Pwndb
+      description: Look for data breach passwords on the dark web.
+      url: http://pwndb2am4tzkvold.onion
+- name: Linux
+  children:
+  - name: Privilege Escalation
+    children:
+    - name: Quimera
+      description: The next generation of privilege escalation.
+      url: https://github.com/quimera-project/quimera
+- name: Windows
+  children:
+  - name: Active Directory
+    children:
+    - name: Samba
+      children:
+      - name: Enum4linux
+        description: Tool for enumerating information from Windows and Samba systems.
+        url: https://github.com/CiscoCXSecurity/enum4linux
+      - name: SMBMap
+        description: Enumerate samba share drives across an entire domain.
+        url: https://github.com/ShawnDEvans/smbmap
+    - name: Poisoning
+      children:
+      - name: Responder
+        description: LLMNR, NBT-NS and MDNS poisoner.
+        url: https://github.com/lgandx/Responder
+      - name: Mitm6
+        description: Exploits the default configuration of Windows to take over the default DNS server.
+        url: https://github.com/dirkjanm/mitm6
+- name: Mobile
+  children:
+  - name: Mobile Security Framework (MobSF)
+    description: Automated, all-in-one mobile application (Android/iOS/Windows) pen-testing, malware analysis and security assessment framework capable of performing static and dynamic analysis.
+    url: https://github.com/MobSF/Mobile-Security-Framework-MobSF
+

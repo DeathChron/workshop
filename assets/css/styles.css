@@ -1,0 +1,26 @@
+svg {
+   border-radius: 15px;
+}
+
+.node {
+  cursor: pointer;
+}
+
+.node:hover {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.node--leaf {
+  fill: white;
+}
+
+.label {
+  text-anchor: middle;
+  font-size: 22px;
+}
+
+.label,
+.node--root {
+  pointer-events: none;
+}
