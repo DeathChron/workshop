@@ -22,6 +22,9 @@ children:
     - name: WhatWeb
       description: Recognises web technologies.
       url: https://github.com/urbanadventurer/WhatWeb
+    - name: WPScan
+      description: WordPress Security Scanner.
+      url: https://github.com/wpscanteam/wpscan
   - name: Fuzzers
     children:
     - name: Ffuf
@@ -30,6 +33,14 @@ children:
     - name: Gobuster
       description: Brute-force URIs including directories and files as well as DNS subdomains.
       url: https://github.com/OJ/gobuster
+  - name: Proxies
+    children:
+    - name: Burp Suite
+      description: Integrated platform for performing security testing of web applications.
+      url: https://portswigger.net/burp
+    - name: ZAP
+      description: OWASP web app scanner.
+      url: https://www.zaproxy.org
   - name: SQL Injection
     children:
     - name: SQLmap
@@ -62,6 +73,14 @@ children:
   - name: TruffleHog
     description: Find leaked credentials.
     url: https://github.com/trufflesecurity/trufflehog
+- name: Cracking
+  children:
+  - name: John the Ripper
+    description: Password security auditing and password recovery tool.
+    url: https://github.com/openwall/john
+  - name: Hashcat 
+    description: Advanced password recovery.
+    url: https://github.com/hashcat/hashcat
 - name: OSINT
   children:
   - name: Passwords
@@ -74,6 +93,23 @@ children:
       url: http://pwndb2am4tzkvold.onion
 - name: Linux
   children:
+  - name: Utilities
+    children:
+    - name: Bat
+      description: A cat(1) clone with syntax highlighting and Git integration.
+      url: https://github.com/sharkdp/bat
+    - name: McFly
+      description: Fly through your shell history.
+      url: https://github.com/cantino/mcfly
+    - name: LSD
+      description: A rewrite of GNU ls with lot of added features.
+      url: https://github.com/Peltoche/lsd
+    - name: yq
+      description: A lightweight and portable command-line YAML, JSON and XML processor.
+      url: https://github.com/mikefarah/yq
+    - name: HTTPie
+      description: Human-friendly CLI HTTP client for the API era.
+      url: https://github.com/httpie/httpie
   - name: Privilege Escalation
     children:
     - name: Quimera
