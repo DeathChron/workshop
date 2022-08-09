@@ -25,6 +25,11 @@ children:
     - name: WPScan
       description: WordPress Security Scanner.
       url: https://github.com/wpscanteam/wpscan
+  - name: Login panels
+    children:
+    - name: Hydra
+      description: Parallelized login cracker which supports numerous protocols to attack.
+      url: https://github.com/vanhauser-thc/thc-hydra
   - name: Fuzzers
     children:
     - name: Ffuf
@@ -91,6 +96,20 @@ children:
     - name: Pwndb
       description: Look for data breach passwords on the dark web.
       url: http://pwndb2am4tzkvold.onion
+    - name: h8mail
+      description: An email OSINT and breach hunting tool.
+      url: https://github.com/khast3x/h8mail
+  - name: Social networks
+    children:
+    - name: EagleEye
+      description: Image recognition on Instagram, Facebook and Twitter.
+      url: https://github.com/ThoughtfulDev/EagleEye
+    - name: Osintgram
+      description: Collect, analyze, and run reconnaissance on Instagram.
+      url: https://github.com/Datalux/Osintgram
+    - name: Sherlock
+      description: Hunt down social media accounts by username across social networks.
+      url: https://github.com/sherlock-project/sherlock
 - name: Linux
   children:
   - name: Utilities
@@ -112,9 +131,19 @@ children:
       url: https://github.com/httpie/httpie
   - name: Privilege Escalation
     children:
-    - name: Quimera
-      description: The next generation of privilege escalation.
-      url: https://github.com/quimera-project/quimera
+    - name: Frameworks
+      children:
+      - name: Quimera
+        description: The next generation of privilege escalation.
+        url: https://github.com/quimera-project/quimera
+    - name: Watchers
+      children:
+      - name: pspy
+        description: Unprivileged Linux process snooping.
+        url: https://github.com/DominicBreuker/pspy
+      - name: pamspy 
+        description: Credentials Dumper for Linux.
+        url: https://github.com/citronneur/pamspy
 - name: Windows
   children:
   - name: Active Directory
@@ -135,6 +164,42 @@ children:
       - name: Mitm6
         description: Exploits the default configuration of Windows to take over the default DNS server.
         url: https://github.com/dirkjanm/mitm6
+- name: Steganography
+  children:
+  - name: File
+    description: Determine file type.
+    url: https://linux.die.net/man/1/file
+  - name: ExifTool
+    description: Read, write and edit meta information.
+    url: https://exiftool.org
+  - name: Binwalk
+    description: Analyzing, reverse engineering, and extracting firmware images.
+    url: https://github.com/ReFirmLabs/binwalk
+  - name: Strings
+    description: Print the sequences of printable characters in files.
+    url: https://man7.org/linux/man-pages/man1/strings.1.html
+  - name: Steghide
+    description: Encrypt and hide data.
+    url: http://steghide.sourceforge.net
+  - name: Stegseek
+    description: Lightning fast steghide cracker.
+    url: https://github.com/RickdeJager/stegseek
+  - name: Audio
+    children:
+    - name: Sonic Visualiser
+      description: Visualisation, analysis, and annotation of music audio recordings.
+      url: https://www.sonicvisualiser.org
+    - name: Audacity
+      description: Multi-track audio editor and recorder.
+      url: https://www.audacityteam.org
+  - name: Image
+    children:
+    - name: ImageMagick
+      description: Create, edit, compose, or convert digital images.
+      url: https://imagemagick.org
+    - name: stegify
+      description: LSB (Least Significant Bit) steganography tool.
+      url: https://github.com/DimitarPetrov/stegify
 - name: Mobile
   children:
   - name: Mobile Security Framework (MobSF)
