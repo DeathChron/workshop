@@ -235,6 +235,7 @@ children:
 - name: Cloud
   children:
   - name: AWS
+    children:
     - name: AWSGoat
       type: laboratory
       description: A Damn Vulnerable AWS Infrastructure.
