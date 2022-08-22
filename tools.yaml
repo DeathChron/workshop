@@ -38,6 +38,10 @@ children:
     - name: Gobuster
       description: Brute-force URIs including directories and files as well as DNS subdomains.
       url: https://github.com/OJ/gobuster
+    - name: SecLists Web Discovery
+      type: wordlist 
+      description: Lists to discover files and directories.
+      url: https://github.com/danielmiessler/SecLists/tree/master/Discovery/Web-Content
   - name: Proxies
     children:
     - name: Burp Suite
@@ -86,6 +90,14 @@ children:
   - name: Hashcat 
     description: Advanced password recovery.
     url: https://github.com/hashcat/hashcat
+  - name: SecLists Passwords
+    type: wordlist 
+    description: Password lists that can be used by multiple tools when attempting to guess credentials for a given target.
+    url: https://github.com/danielmiessler/SecLists/tree/master/Passwords
+  - name: Kaonashi project
+    type: wordlist 
+    description: Wordlist, rules and masks.
+    url: https://github.com/kaonashi-passwords/Kaonashi
 - name: OSINT
   children:
   - name: Passwords
@@ -156,6 +168,21 @@ children:
       - name: SMBMap
         description: Enumerate samba share drives across an entire domain.
         url: https://github.com/ShawnDEvans/smbmap
+    - name: Kerberos
+      children:
+      - name: You Do (Not) Understand Kerberos
+        type: video
+        description: Understanding how Kerberos works, but also WHY it works the way it does.
+        url: https://youtu.be/4LDpb1R3Ghg
+      - name: You Do (Not) Understand Kerberos Delegation
+        type: video
+        description: Understanding how Kerberos Delegation works.
+        url: https://www.youtube.com/watch?v=p9QFdITuvgU&list=PLwb6et4T42wwlxffjq9-F3KVDNDi9gQFs&ab_channel=ATTL4S
+    - name: AV Bypass
+      children:
+      - name: hoaxshell
+        description: Windows reverse shell based on http(s) traffic.
+        url: https://github.com/t3l3machus/hoaxshell
     - name: Poisoning
       children:
       - name: Responder
@@ -205,4 +232,12 @@ children:
   - name: Mobile Security Framework (MobSF)
     description: Automated, all-in-one mobile application (Android/iOS/Windows) pen-testing, malware analysis and security assessment framework capable of performing static and dynamic analysis.
     url: https://github.com/MobSF/Mobile-Security-Framework-MobSF
+- name: Cloud
+  children:
+  - name: AWS
+    - name: AWSGoat
+      type: laboratory
+      description: A Damn Vulnerable AWS Infrastructure.
+      url: https://github.com/ine-labs/AWSGoat
+
 

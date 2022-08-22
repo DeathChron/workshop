@@ -42,9 +42,12 @@ function createGraph(graphName) {
                 }
                 if (d.data.type == "learning") {
                     return "#f4cccc"
-                }
-                if (d.data.type == "dictionary") {
-                    return "#9d8cd4"
+                } else if (d.data.type == "video") {
+                    return "#bca9f8"
+                } else if (d.data.type == "laboratory") {
+                    return "#bad08e"
+                } else if (d.data.type == "wordlist") {
+                    return "#ccdcf4"
                 }
                 return "#e8e2bb"
             })
