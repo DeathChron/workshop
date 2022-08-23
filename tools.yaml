@@ -17,8 +17,14 @@ children:
   - name: Endpoints
     children:
     - name: ParamSpider
-      description: Parameter miner for humans
+      description: Parameter miner for humans.
       url: https://github.com/devanshbatham/ParamSpider
+  children: 
+  - name: XSS
+    children:
+    - name: Dalfox
+      descripcion: DalFox is an powerful open source XSS scanning tool.
+      url: https://github.com/hahwul/dalfox
   - name: Scanners
     children:
     - name: Nuclei
@@ -131,6 +137,9 @@ children:
   children:
   - name: Utilities
     children:
+    - name: Gf
+      description: A wrapper around grep to avoid typing common patterns.
+      url: https://github.com/tomnomnom/gf
     - name: Bat
       description: A cat(1) clone with syntax highlighting and Git integration.
       url: https://github.com/sharkdp/bat
