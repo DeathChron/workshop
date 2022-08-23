@@ -19,7 +19,6 @@ children:
     - name: ParamSpider
       description: Parameter miner for humans
       url: https://github.com/devanshbatham/ParamSpider
-  children:
   - name: Scanners
     children:
     - name: Nuclei
