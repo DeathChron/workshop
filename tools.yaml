@@ -58,6 +58,23 @@ children:
     - name: Burp Suite
       description: Integrated platform for performing security testing of web applications.
       url: https://portswigger.net/burp
+    - name: Burp Suite Extensions
+      children:
+        - name: Turbo Intruder
+          description: Burp Suite extension for sending large numbers of HTTP requests and analyzing the results.
+          url: https://github.com/PortSwigger/turbo-intruder
+        - name: Param Miner
+          description: Burp Suite extension for identifying hidden and unlinked parameters.
+          url: https://github.com/PortSwigger/param-miner
+        - name: InQL
+          description: Burp Suite extension to facilitate GraphQL technology security auditing efforts.
+          url: https://github.com/doyensec/inql
+        - name: Knife
+          description: Burp Suite extension to make some Burp small improvements.
+          url: https://github.com/bit4woo/knife
+        - name: BurpCustomizer
+          description: Burp Suite extension to use different Burp themes.
+          url: https://github.com/CoreyD97/BurpCustomizer
     - name: ZAP
       description: OWASP web app scanner.
       url: https://www.zaproxy.org
@@ -155,6 +172,9 @@ children:
     - name: HTTPie
       description: Human-friendly CLI HTTP client for the API era.
       url: https://github.com/httpie/httpie
+    - name: peco
+      description: Simplistic interactive filtering tool.
+      url: https://github.com/peco/peco
   - name: Privilege Escalation
     children:
     - name: Frameworks
