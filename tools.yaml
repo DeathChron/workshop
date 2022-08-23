@@ -181,6 +181,21 @@ children:
     - name: pet
       description: CLI Snippet Manager.
       url: https://github.com/knqyf263/pet
+    - name: joshuto
+      description: Ranger-like terminal file manager written in Rust.
+      url: https://github.com/kamiyaa/joshuto
+    - name: Trash
+      description: Trashes files recording the original path, deletion date, and permissions.
+      url: https://github.com/andreafrancia/trash-cli
+    - name: qrcp
+      description: Transfer files over Wi-Fi from your computer to a mobile device by scanning a QR code without leaving the terminal.
+      url: https://github.com/claudiodangelis/qrcp
+    - name: moreutils
+      description: The utilities package every UNIX/Linux/Mac OS developer should know
+      url: https://rentes.github.io/unix/utilities/2015/07/27/moreutils-package/
+    - name: LNAV
+      description: An advanced log file viewer for the small-scale.
+      url: https://github.com/tstack/lnav
   - name: Privilege Escalation
     children:
     - name: Frameworks
