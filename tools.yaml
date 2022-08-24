@@ -178,9 +178,9 @@ children:
     - name: fzf
       description: General-purpose command-line fuzzy finder.
       url: https://github.com/junegunn/fzf
-    - name: pet
-      description: CLI Snippet Manager.
-      url: https://github.com/knqyf263/pet
+    - name: superpet
+      description: Simple command-line snippet and environment manager.
+      url: https://github.com/RamiAwar/superpet
     - name: joshuto
       description: Ranger-like terminal file manager written in Rust.
       url: https://github.com/kamiyaa/joshuto
@@ -196,6 +196,9 @@ children:
     - name: LNAV
       description: An advanced log file viewer for the small-scale.
       url: https://github.com/tstack/lnav
+    - name: atool
+      description: Script for managing file archives of various types (tar, tar+gzip, zip etc).
+      url: https://www.nongnu.org/atool/
   - name: Privilege Escalation
     children:
     - name: Frameworks
