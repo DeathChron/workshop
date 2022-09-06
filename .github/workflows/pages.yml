@@ -1,4 +1,4 @@
-name: Deploy tools page
+name: Deploy workshop page
 
 on:
   push:
@@ -29,9 +29,9 @@ jobs:
       - name: Generate JSON
         uses: mikefarah/yq@master
         with:
-          cmd: yq tools.yaml -o=json | tee assets/json/hacking.json
+          cmd: yq workshop.yaml -o=json | tee assets/json/workshop.json
       - name: Debug
-        run: cat assets/json/hacking.json
+        run: cat assets/json/workshop.json
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Upload artifact
