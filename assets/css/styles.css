@@ -7,8 +7,9 @@ svg {
 }
 
 .node:hover {
-  stroke: #000;
-  stroke-width: 1.5px;
+  stroke: hsl(285, 30%, 23%);
+  stroke-width: 1.3px;
+  opacity: 0.9;
 }
 
 .node--leaf {
@@ -20,7 +21,20 @@ svg {
   font-size: 22px;
 }
 
-.label,
-.node--root {
+.label {
   pointer-events: none;
+}
+
+.legend {
+  border-radius: 15px;
+  background-color: hsl(298, 52%, 24%);
+  display: grid;
+  grid: 35px / auto auto auto;
+  margin: 15px 0px;
+  padding: 6px 20px;
+}
+
+.entry {
+  font-weight: 600; 
+  font-size: 19px;
 }

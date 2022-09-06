@@ -96,7 +96,3 @@
 .dialog-content a:hover {
   background: linear-gradient(90deg, rgba(59,39,111,1) 0%, rgba(93,30,93,1) 100%);
 }
-
-.dialog-content button {
-  color: #3b276f;
-}
