@@ -19,7 +19,6 @@ children:
     - name: ParamSpider
       description: Parameter miner for humans.
       url: https://github.com/devanshbatham/ParamSpider
-  children: 
   - name: XSS
     children:
     - name: Dalfox
@@ -128,6 +127,19 @@ children:
     url: https://github.com/kaonashi-passwords/Kaonashi
 - name: OSINT
   children:
+  - name: Traffic
+    children:
+    - name: Flightera.net
+      description: Aviation tracker and flight data websites worldwide.
+      url: https://www.flightera.net/
+    - name: OpenRailwayMap
+      description: Detailed online map of the world's railway infrastructure.
+      url: https://www.openrailwaymap.org/
+  - name: Networks
+    children:
+    - name: WiGLE
+      description: Maps and database of 802.11 wireless networks, with statistics, submitted by wardrivers, netstumblers, and net huggers.
+      url: https://www.wigle.net/
   - name: Passwords
     children:
     - name: Have I Been Pwned
@@ -236,6 +248,9 @@ children:
         type: video
         description: Understanding how Kerberos Delegation works.
         url: https://www.youtube.com/watch?v=p9QFdITuvgU&list=PLwb6et4T42wwlxffjq9-F3KVDNDi9gQFs&ab_channel=ATTL4S
+      - name: Kerbrute
+        description: A tool to quickly bruteforce and enumerate valid Active Directory accounts through Kerberos Pre-Authentication.
+        url: https://github.com/ropnop/kerbrute
     - name: AV Bypass
       children:
       - name: hoaxshell
@@ -298,5 +313,15 @@ children:
       type: laboratory
       description: A Damn Vulnerable AWS Infrastructure.
       url: https://github.com/ine-labs/AWSGoat
-
+- name: C2
+  children:
+  - name: Metasploit 
+    description: Ruby-based, modular penetration testing platform that enables you to write, test, and execute exploit code.
+    url: https://docs.rapid7.com/metasploit/msf-overview
+  - name: Covenant 
+    description: .NET command and control framework that aims to highlight the attack surface of .NET, make the use of offensive .NET tradecraft easier, and serve as a collaborative command and control platform for red teamers.
+    url: https://github.com/cobbr/Covenant
+  - name: Cobalt Strike 
+    description: Software for Adversary Simulations and Red Team Operations.
+    url: https://www.cobaltstrike.com/
 
