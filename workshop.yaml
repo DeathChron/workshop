@@ -3,15 +3,36 @@ name: Hacking
 children:
 - name: Network
   children:
-  - name: Nmap
-    description: Utility for network discovery and security auditing.
-    url: https://nmap.org
-  - name: Naabu 
-    description: Port scanning tool written in Go that allows you to enumerate valid ports for hosts in a fast and reliable manner.
-    url: https://github.com/projectdiscovery/naabu
-  - name: Subfinder 
-    description: Subdomain discovery tool that discovers valid subdomains for websites by using passive online sources.
-    url: https://github.com/projectdiscovery/subfinder
+  - name: Port scanning
+    children:
+    - name: Nmap
+      description: Utility for network discovery and security auditing.
+      url: https://nmap.org
+    - name: Naabu 
+      description: Port scanning tool written in Go that allows you to enumerate valid ports for hosts in a fast and reliable manner.
+      url: https://github.com/projectdiscovery/naabu
+    - name: Masscan 
+      description:  Internet-scale port scanner. It can scan the entire Internet in under 5 minutes, transmitting 10 million packets per second, from a single machine.
+      url: https://github.com/robertdavidgraham/masscan
+    - name: RustScan
+      description: RustScan is a modern take on the port scanner. Sleek & fast. All while providing extensive extendability to you.
+      url: https://github.com/RustScan/RustScan
+  - name: Subdomains
+    children:
+    - name: Amass 
+      description: Network mapping of attack surfaces and external asset discovery using open source information gathering and active reconnaissance techniques.
+      url: https://github.com/OWASP/Amass
+    - name: Subfinder 
+      description: Subdomain discovery tool that discovers valid subdomains for websites by using passive online sources.
+      url: https://github.com/projectdiscovery/subfinder
+  - name: Protocols
+    children:
+    - name: Yersinia
+      description: A Framework for layer 2 attacks.
+      url: https://www.kali.org/tools/yersinia/
+    - name: Wireshark
+      description: World's foremost and widely-used network protocol analyzer.
+      url: https://www.wireshark.org/
 - name: Web
   children:
   - name: Endpoints
@@ -40,6 +61,14 @@ children:
     - name: Hydra
       description: Parallelized login cracker which supports numerous protocols to attack.
       url: https://github.com/vanhauser-thc/thc-hydra
+  - name: Screenshots
+    children:
+    - name: gowitness
+      description: A golang, web screenshot utility using Chrome Headless.
+      url: https://github.com/sensepost/gowitness
+    - name: Aquatone
+      description: A tool for visual inspection of websites across a large amount of hosts and is convenient for quickly gaining an overview of HTTP-based attack surface.
+      url: https://github.com/michenriksen/aquatone
   - name: Fuzzers
     children:
     - name: Ffuf
@@ -211,6 +240,9 @@ children:
     - name: atool
       description: Script for managing file archives of various types (tar, tar+gzip, zip etc).
       url: https://www.nongnu.org/atool/
+    - name: Remmina
+      description: Remote desktop client with RDP, SSH, SPICE, VNC, and X2Go protocol support.
+      url: https://remmina.org/
   - name: Privilege Escalation
     children:
     - name: Frameworks
@@ -264,6 +296,14 @@ children:
       - name: Mitm6
         description: Exploits the default configuration of Windows to take over the default DNS server.
         url: https://github.com/dirkjanm/mitm6
+  - name: Privilege Escalation
+    children:
+    - name: PrintSpoofer
+      description: From LOCAL/NETWORK SERVICE to SYSTEM by abusing SeImpersonatePrivilege on Windows 10 and Server 2016/2019.
+      url: https://github.com/itm4n/PrintSpoofer
+    - name: SweetPotato
+      description: A collection of various native Windows privilege escalation techniques from service accounts to SYSTEM.
+      url: https://github.com/uknowsec/SweetPotato
 - name: Steganography
   children:
   - name: File
