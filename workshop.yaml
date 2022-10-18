@@ -30,9 +30,24 @@ children:
     - name: Yersinia
       description: A Framework for layer 2 attacks.
       url: https://www.kali.org/tools/yersinia/
+- name: Forensics
+  children:
+  - name: Network
+    children:
     - name: Wireshark
       description: World's foremost and widely-used network protocol analyzer.
       url: https://www.wireshark.org/
+    - name: Pcaps
+      children:
+        - name: capinfos
+          description: Prints information about capture files.
+          url: https://linux.die.net/man/1/capinfos
+        - name: BruteShark
+          description: Network Forensic Analysis Tool (NFAT) that performs deep processing and inspection of network traffic.
+          url: https://github.com/odedshimon/BruteShark
+        - name: ngrep
+          description: PCAP-based tool that allows you to specify an extended regular or hexadecimal expression to match against data payloads of packets.
+          url: https://github.com/jpr5/ngrep
 - name: Web
   children:
   - name: Endpoints
@@ -243,6 +258,9 @@ children:
     - name: Remmina
       description: Remote desktop client with RDP, SSH, SPICE, VNC, and X2Go protocol support.
       url: https://remmina.org/
+    - name: viu
+      description: A small command-line application to view images from the terminal written in Rust.
+      url: https://github.com/atanunq/viu
   - name: Privilege Escalation
     children:
     - name: Frameworks
