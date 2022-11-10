@@ -30,7 +30,7 @@ children:
     - name: Yersinia
       description: A Framework for layer 2 attacks.
       url: https://www.kali.org/tools/yersinia/
-- name: Forensics
+- name: DFIR
   children:
   - name: Network
     children:
@@ -48,6 +48,37 @@ children:
         - name: ngrep
           description: PCAP-based tool that allows you to specify an extended regular or hexadecimal expression to match against data payloads of packets.
           url: https://github.com/jpr5/ngrep
+  - name: Recover
+    children:
+    - name: Foremost
+      description: Recover files using their headers, footers, and data structures.
+      url: https://linux.die.net/man/1/foremost
+  - name: USB
+    children:
+    - name: USB Detective
+      description: An application for identifying, investigating, and reporting on USB storage devices that have been connected to a Windows system.
+      url: https://usbdetective.com/
+  - name: Disk images
+    children:
+    - name: bulk_extractor
+      description: It is a "get evidence" button that rapidly scans any kind of input (disk images, files, directories of files, etc) and extracts structured information such as email addresses, credit card numbers, JPEGs and JSON snippets without parsing the file system or file system structures.
+      url: https://github.com/simsong/bulk_extractor
+    - name: Autopsy
+      description: It is a fast, thorough, and efficient hard drive investigation solution that evolves with your needs.
+      url: https://www.autopsy.com/
+  - name: Memory
+    children:
+    - name: Volatility 2
+      description: Open collection of tools, implemented in Python under the GNU General Public License, for the extraction of digital artifacts from volatile memory (RAM) samples.
+      url: https://github.com/volatilityfoundation/volatility
+    - name: Volatility 3
+      description: Open collection of tools, implemented in Python under the GNU General Public License, for the extraction of digital artifacts from volatile memory (RAM) samples.
+      url: https://github.com/volatilityfoundation/volatility3
+  - name: Event logs
+    children:
+    - name: Chainsaw
+      description: Offers a generic and fast method of searching through event logs for keywords, and by identifying threats using built-in support for Sigma detection rules, and via custom Chainsaw detection rules.
+      url: https://github.com/WithSecureLabs/chainsaw
 - name: Web
   children:
   - name: Endpoints
