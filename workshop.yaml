@@ -53,6 +53,9 @@ children:
     - name: Foremost
       description: Recover files using their headers, footers, and data structures.
       url: https://linux.die.net/man/1/foremost
+    - name: TestDisk
+      description: A powerful free data recovery software.
+      url: https://www.cgsecurity.org/wiki/TestDisk
   - name: USB
     children:
     - name: USB Detective
@@ -146,6 +149,9 @@ children:
         - name: Knife
           description: Burp Suite extension to make some Burp small improvements.
           url: https://github.com/bit4woo/knife
+        - name: AutoRepeater
+          description: Automated HTTP Request Repeating With Burp Suite.
+          url: https://github.com/nccgroup/AutoRepeater
         - name: BurpCustomizer
           description: Burp Suite extension to use different Burp themes.
           url: https://github.com/CoreyD97/BurpCustomizer
