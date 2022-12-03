@@ -253,9 +253,9 @@ children:
     - name: Bat
       description: A cat(1) clone with syntax highlighting and Git integration.
       url: https://github.com/sharkdp/bat
-    - name: McFly
-      description: Fly through your shell history.
-      url: https://github.com/cantino/mcfly
+    - name: hiSHtory
+      description: Your shell history -> synced, queryable, and in context.
+      url: https://github.com/ddworken/hishtory
     - name: LSD
       description: A rewrite of GNU ls with lot of added features.
       url: https://github.com/Peltoche/lsd
@@ -265,18 +265,15 @@ children:
     - name: HTTPie
       description: Human-friendly CLI HTTP client for the API era.
       url: https://github.com/httpie/httpie
-    - name: peco
-      description: Simplistic interactive filtering tool.
-      url: https://github.com/peco/peco
-    - name: fzf
-      description: General-purpose command-line fuzzy finder.
-      url: https://github.com/junegunn/fzf
+    - name: skim
+      description: General-purpose command-line fuzzy finder in rust.
+      url: https://github.com/lotabout/skim
     - name: superpet
       description: Simple command-line snippet and environment manager.
       url: https://github.com/RamiAwar/superpet
-    - name: joshuto
-      description: Ranger-like terminal file manager written in Rust.
-      url: https://github.com/kamiyaa/joshuto
+    - name: lf
+      description:  Terminal file manager.
+      url: https://github.com/gokcehan/lf
     - name: Trash
       description: Trashes files recording the original path, deletion date, and permissions.
       url: https://github.com/andreafrancia/trash-cli
@@ -298,6 +295,12 @@ children:
     - name: viu
       description: A small command-line application to view images from the terminal written in Rust.
       url: https://github.com/atanunq/viu
+    - name: Pastel
+      description: A command-line tool to generate, analyze, convert and manipulate colors.
+      url: https://github.com/sharkdp/pastel
+    - name: qsv
+      description: Ultra-fast CSV data-wrangling toolkit.
+      url: https://github.com/jqnatividad/qsv
   - name: Privilege Escalation
     children:
     - name: Frameworks
