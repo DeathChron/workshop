@@ -127,9 +127,22 @@ children:
       description: Brute-force URIs including directories and files as well as DNS subdomains.
       url: https://github.com/OJ/gobuster
     - name: SecLists Web Discovery
-      type: wordlist 
+      type: wordlist
       description: Lists to discover files and directories.
       url: https://github.com/danielmiessler/SecLists/tree/master/Discovery/Web-Content
+  - name: API
+    children:
+    - name: API Guesser
+      description: Simple website to guess API Key / OAuth Token. 
+      url: https://api-guesser.netlify.app/
+    - name: GraphQL
+      children:
+      - name: graphw00f
+        description: GraphQL server engine fingerprinting utility to learn more about what technology is behind a given GraphQL endpoint. 
+        url: https://github.com/dolevf/graphw00f
+      - name: GraphQL Voyager
+        description: Represent any GraphQL API as an interactive graph.
+        url: https://ivangoncharov.github.io/graphql-voyager
   - name: Proxies
     children:
     - name: Burp Suite
@@ -155,6 +168,15 @@ children:
         - name: BurpCustomizer
           description: Burp Suite extension to use different Burp themes.
           url: https://github.com/CoreyD97/BurpCustomizer
+        - name: IP Rotate
+          description: Extension for Burp Suite which uses AWS API Gateway to change your IP on every request.
+          url: https://github.com/PortSwigger/ip-rotate
+        - name: Autorize
+          description: Autorize is an automatic authorization enforcement detection extension for Burp Suite.
+          url: https://github.com/PortSwigger/autorize
+        - name: JSON Web Tokens
+          description: Decode and manipulate JSON web tokens on the fly, check their validity and automate common attacks.
+          url: https://github.com/PortSwigger/json-web-tokens
     - name: ZAP
       description: OWASP web app scanner.
       url: https://www.zaproxy.org
@@ -268,9 +290,9 @@ children:
     - name: skim
       description: General-purpose command-line fuzzy finder in rust.
       url: https://github.com/lotabout/skim
-    - name: superpet
-      description: Simple command-line snippet and environment manager.
-      url: https://github.com/RamiAwar/superpet
+    - name: navi
+      description: An interactive cheatsheet tool for the command-line.
+      url: https://github.com/denisidoro/navi
     - name: lf
       description:  Terminal file manager.
       url: https://github.com/gokcehan/lf
@@ -301,6 +323,44 @@ children:
     - name: qsv
       description: Ultra-fast CSV data-wrangling toolkit.
       url: https://github.com/jqnatividad/qsv
+    - name: marp
+      description: Marp (also known as the Markdown Presentation Ecosystem) provides an intuitive experience for creating beautiful slide decks. You only have to focus on writing your story in a Markdown document.
+      url: https://marp.app/
+    - name: delta
+      description: A syntax-highlighting pager for git, diff, and grep output.
+      url: https://github.com/dandavison/delta
+    - name: Gnome extensions
+      children:
+      - name: Clipboard history
+        description: Gnome extension that saves what you've copied into an easily accessible, searchable history panel.
+        url: https://github.com/SUPERCILEX/gnome-clipboard-history
+      - name: Color picker
+        description: Simple color picker for GNOME Shell.
+        url: https://github.com/tuberry/color-picker
+      - name: Current screen only in windows switcher
+        description: Gnome extension that limits the windows shown on the switcher to those of the current monitor.
+        url: https://github.com/mmai/Current_screen_only_on_window_switcher
+      - name: DOTSPACES
+        description: A simple workspace indicator extension for the GNOME Desktop Environment.
+        url: https://github.com/CharlieQLe/gnome-extension-dotspaces
+      - name: NoAnnoyance
+        description: Another extension, that removes the 'Window is ready' notification and puts the window into focus.
+        url: https://github.com/bdaase/noannoyance
+      - name: Reboot to UEFI
+        description: This is a small Gnome extension that adds the ability to reboot directly to the UEFI.
+        url: https://github.com/UbayGD/reboottouefi
+      - name: Tiling Assistant
+        description: An extension which adds a Windows-like snap assist to GNOME.
+        url: https://github.com/Leleat/Tiling-Assistant
+      - name: Vitals
+        description: A glimpse into your computer's temperature, voltage, fan speed, memory usage and CPU load.
+        url: https://github.com/corecoding/Vitals
+      - name: Weather O'Clock
+        description: Display the current weather inside the pill next to the clock.
+        url: https://github.com/CleoMenezesJr/weather-oclock
+      - name: Weeks Start on Monday Again...
+        description: The Gnome Shell Calendar week can start on Monday or any other day of the week.
+        url: https://github.com/F-i-f/weeks-start-on-monday
   - name: Privilege Escalation
     children:
     - name: Frameworks
@@ -421,5 +481,19 @@ children:
     url: https://github.com/cobbr/Covenant
   - name: Cobalt Strike 
     description: Software for Adversary Simulations and Red Team Operations.
-    url: https://www.cobaltstrike.com/
-
+    url: https://www.cobaltstrike.com
+- name: Phishing
+  children:
+  - name: Domains
+    children:
+    - name: Expired Domains.net
+      description: Expired Domain Name Search Engine.
+      url: https://www.expireddomains.net
+  - name: Campaigns
+    children:
+    - name: Gophish
+      description: Gophish is an open-source phishing toolkit designed for businesses and penetration testers. It provides the ability to quickly and easily setup and execute phishing engagements and security awareness training.
+      url: https://github.com/gophish/gophish
+    - name: Evilgophish
+      description: Evilginx2 + Gophish.
+      url: https://github.com/fin3ss3g0d/evilgophish
