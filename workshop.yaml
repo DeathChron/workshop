@@ -133,8 +133,21 @@ children:
   - name: API
     children:
     - name: API Guesser
-      description: Simple website to guess API Key / OAuth Token. 
+      description: Simple website to guess API Key / OAuth Token.
       url: https://api-guesser.netlify.app/
+    - name: Hacking APIs
+      type: book
+      author: Corey Ball
+      description: Breaking Web Application Programming Interfaces.
+      url: https://nostarch.com/hacking-apis
+    - name: crAPI
+      type: laboratory
+      description: Completely ridiculous API (crAPI) will help you to understand the ten most critical API security risks. crAPI is vulnerable by design, but you'll be able to safely run it to educate/train yourself.
+      url: https://github.com/OWASP/crAPI
+    - name: vAPI
+      type: laboratory
+      description: Vulnerable Adversely Programmed Interface which is Self-Hostable API that mimics OWASP API Top 10 scenarios in the means of Exercises.
+      url: https://github.com/roottusk/vapi
     - name: GraphQL
       children:
       - name: graphw00f
@@ -143,6 +156,15 @@ children:
       - name: GraphQL Voyager
         description: Represent any GraphQL API as an interactive graph.
         url: https://ivangoncharov.github.io/graphql-voyager
+      - name: Damn Vulnerable GraphQL Application
+        type: laboratory
+        description: An intentionally vulnerable implementation of Facebook's GraphQL technology, to learn and practice GraphQL Security.
+        url: https://github.com/dolevf/Damn-Vulnerable-GraphQL-Application
+      - name: Black Hat GraphQL
+        type: book
+        author: Dolev Farhi and Nick Aleks
+        description: Attacking Next Generation APIs. 
+        url: https://nostarch.com/black-hat-graphql
   - name: Proxies
     children:
     - name: Burp Suite
@@ -228,6 +250,12 @@ children:
     type: wordlist 
     description: Wordlist, rules and masks.
     url: https://github.com/kaonashi-passwords/Kaonashi
+  - name: CeWL
+    description: Custom Word List generator.
+    url: https://github.com/digininja/CeWL
+  - name: CUPP
+    description: Common User Passwords Profiler.
+    url: https://github.com/Mebus/cupp
 - name: OSINT
   children:
   - name: Traffic
@@ -269,66 +297,68 @@ children:
   children:
   - name: Utilities
     children:
-    - name: Gf
-      description: A wrapper around grep to avoid typing common patterns.
-      url: https://github.com/tomnomnom/gf
-    - name: Bat
-      description: A cat(1) clone with syntax highlighting and Git integration.
-      url: https://github.com/sharkdp/bat
-    - name: hiSHtory
-      description: Your shell history -> synced, queryable, and in context.
-      url: https://github.com/ddworken/hishtory
-    - name: LSD
-      description: A rewrite of GNU ls with lot of added features.
-      url: https://github.com/Peltoche/lsd
-    - name: yq
-      description: A lightweight and portable command-line YAML, JSON and XML processor.
-      url: https://github.com/mikefarah/yq
-    - name: HTTPie
-      description: Human-friendly CLI HTTP client for the API era.
-      url: https://github.com/httpie/httpie
-    - name: skim
-      description: General-purpose command-line fuzzy finder in rust.
-      url: https://github.com/lotabout/skim
-    - name: navi
-      description: An interactive cheatsheet tool for the command-line.
-      url: https://github.com/denisidoro/navi
-    - name: lf
-      description:  Terminal file manager.
-      url: https://github.com/gokcehan/lf
-    - name: Trash
-      description: Trashes files recording the original path, deletion date, and permissions.
-      url: https://github.com/andreafrancia/trash-cli
-    - name: qrcp
-      description: Transfer files over Wi-Fi from your computer to a mobile device by scanning a QR code without leaving the terminal.
-      url: https://github.com/claudiodangelis/qrcp
-    - name: moreutils
-      description: The utilities package every UNIX/Linux/Mac OS developer should know
-      url: https://rentes.github.io/unix/utilities/2015/07/27/moreutils-package/
-    - name: LNAV
-      description: An advanced log file viewer for the small-scale.
-      url: https://github.com/tstack/lnav
-    - name: atool
-      description: Script for managing file archives of various types (tar, tar+gzip, zip etc).
-      url: https://www.nongnu.org/atool/
-    - name: Remmina
-      description: Remote desktop client with RDP, SSH, SPICE, VNC, and X2Go protocol support.
-      url: https://remmina.org/
-    - name: viu
-      description: A small command-line application to view images from the terminal written in Rust.
-      url: https://github.com/atanunq/viu
-    - name: Pastel
-      description: A command-line tool to generate, analyze, convert and manipulate colors.
-      url: https://github.com/sharkdp/pastel
-    - name: qsv
-      description: Ultra-fast CSV data-wrangling toolkit.
-      url: https://github.com/jqnatividad/qsv
-    - name: marp
-      description: Marp (also known as the Markdown Presentation Ecosystem) provides an intuitive experience for creating beautiful slide decks. You only have to focus on writing your story in a Markdown document.
-      url: https://marp.app/
-    - name: delta
-      description: A syntax-highlighting pager for git, diff, and grep output.
-      url: https://github.com/dandavison/delta
+    - name: Terminal
+      children:
+      - name: Gf
+        description: A wrapper around grep to avoid typing common patterns.
+        url: https://github.com/tomnomnom/gf
+      - name: Bat
+        description: A cat(1) clone with syntax highlighting and Git integration.
+        url: https://github.com/sharkdp/bat
+      - name: hiSHtory
+        description: Your shell history -> synced, queryable, and in context.
+        url: https://github.com/ddworken/hishtory
+      - name: LSD
+        description: A rewrite of GNU ls with lot of added features.
+        url: https://github.com/Peltoche/lsd
+      - name: yq
+        description: A lightweight and portable command-line YAML, JSON and XML processor.
+        url: https://github.com/mikefarah/yq
+      - name: HTTPie
+        description: Human-friendly CLI HTTP client for the API era.
+        url: https://github.com/httpie/httpie
+      - name: skim
+        description: General-purpose command-line fuzzy finder in rust.
+        url: https://github.com/lotabout/skim
+      - name: navi
+        description: An interactive cheatsheet tool for the command-line.
+        url: https://github.com/denisidoro/navi
+      - name: lf
+        description:  Terminal file manager.
+        url: https://github.com/gokcehan/lf
+      - name: Trash
+        description: Trashes files recording the original path, deletion date, and permissions.
+        url: https://github.com/andreafrancia/trash-cli
+      - name: qrcp
+        description: Transfer files over Wi-Fi from your computer to a mobile device by scanning a QR code without leaving the terminal.
+        url: https://github.com/claudiodangelis/qrcp
+      - name: moreutils
+        description: The utilities package every UNIX/Linux/Mac OS developer should know
+        url: https://rentes.github.io/unix/utilities/2015/07/27/moreutils-package/
+      - name: LNAV
+        description: An advanced log file viewer for the small-scale.
+        url: https://github.com/tstack/lnav
+      - name: atool
+        description: Script for managing file archives of various types (tar, tar+gzip, zip etc).
+        url: https://www.nongnu.org/atool/
+      - name: Remmina
+        description: Remote desktop client with RDP, SSH, SPICE, VNC, and X2Go protocol support.
+        url: https://remmina.org/
+      - name: viu
+        description: A small command-line application to view images from the terminal written in Rust.
+        url: https://github.com/atanunq/viu
+      - name: Pastel
+        description: A command-line tool to generate, analyze, convert and manipulate colors.
+        url: https://github.com/sharkdp/pastel
+      - name: qsv
+        description: Ultra-fast CSV data-wrangling toolkit.
+        url: https://github.com/jqnatividad/qsv
+      - name: marp
+        description: Marp (also known as the Markdown Presentation Ecosystem) provides an intuitive experience for creating beautiful slide decks. You only have to focus on writing your story in a Markdown document.
+        url: https://marp.app/
+      - name: delta
+        description: A syntax-highlighting pager for git, diff, and grep output.
+        url: https://github.com/dandavison/delta
     - name: Gnome extensions
       children:
       - name: Clipboard history
@@ -473,15 +503,18 @@ children:
       url: https://github.com/ine-labs/AWSGoat
 - name: C2
   children:
-  - name: Metasploit 
+  - name: Metasploit
     description: Ruby-based, modular penetration testing platform that enables you to write, test, and execute exploit code.
     url: https://docs.rapid7.com/metasploit/msf-overview
-  - name: Covenant 
+  - name: Covenant
     description: .NET command and control framework that aims to highlight the attack surface of .NET, make the use of offensive .NET tradecraft easier, and serve as a collaborative command and control platform for red teamers.
     url: https://github.com/cobbr/Covenant
-  - name: Cobalt Strike 
+  - name: Cobalt Strike
     description: Software for Adversary Simulations and Red Team Operations.
     url: https://www.cobaltstrike.com
+  - name: Havoc
+    description: A modern and malleable post-exploitation command and control framework.
+    url: https://github.com/HavocFramework/Havoc
 - name: Phishing
   children:
   - name: Domains

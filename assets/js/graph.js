@@ -66,6 +66,8 @@ function createGraph(graphName) {
           return "#bad08e";
         } else if (d.data.type == "wordlist") {
           return "#ccdcf4";
+        } else if (d.data.type == "book") {
+          return "#91848b";
         }
         return "#e8e2bb";
       })
