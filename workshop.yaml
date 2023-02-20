@@ -437,11 +437,6 @@ children:
       - name: Kerbrute
         description: A tool to quickly bruteforce and enumerate valid Active Directory accounts through Kerberos Pre-Authentication.
         url: https://github.com/ropnop/kerbrute
-    - name: AV Bypass
-      children:
-      - name: hoaxshell
-        description: Windows reverse shell based on http(s) traffic.
-        url: https://github.com/t3l3machus/hoaxshell
     - name: Poisoning
       children:
       - name: Responder
@@ -458,6 +453,16 @@ children:
     - name: SweetPotato
       description: A collection of various native Windows privilege escalation techniques from service accounts to SYSTEM.
       url: https://github.com/uknowsec/SweetPotato
+  - name: AV Bypass
+    children:
+    - name: hoaxshell
+      description: Windows reverse shell based on http(s) traffic.
+      url: https://github.com/t3l3machus/hoaxshell
+  - name: UAC Bypass
+    children:
+    - name: UACME
+      description: Defeating Windows User Account Control by abusing built-in Windows AutoElevate backdoor.
+      url: https://github.com/hfiref0x/UACME
 - name: Steganography
   children:
   - name: File
