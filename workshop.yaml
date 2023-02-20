@@ -156,6 +156,12 @@ children:
       - name: GraphQL Voyager
         description: Represent any GraphQL API as an interactive graph.
         url: https://ivangoncharov.github.io/graphql-voyager
+      - name: GraphQLmap
+        description: A scripting engine to interact with a graphql endpoint for pentesting purposes.
+        url: https://github.com/swisskyrepo/GraphQLmap
+      - name: Clairvoyance
+        description: Allows getting GraphQL API schema when introspection is disabled. It produces schema in JSON format suitable for other tools like GraphQL Voyager, InQL or graphql-path-enum.
+        url: https://github.com/nikitastupin/clairvoyance
       - name: Damn Vulnerable GraphQL Application
         type: laboratory
         description: An intentionally vulnerable implementation of Facebook's GraphQL technology, to learn and practice GraphQL Security.
@@ -163,7 +169,7 @@ children:
       - name: Black Hat GraphQL
         type: book
         author: Dolev Farhi and Nick Aleks
-        description: Attacking Next Generation APIs. 
+        description: Attacking Next Generation APIs.
         url: https://nostarch.com/black-hat-graphql
   - name: Proxies
     children:
@@ -480,6 +486,9 @@ children:
     - name: Audacity
       description: Multi-track audio editor and recorder.
       url: https://www.audacityteam.org
+    - name: SSTV Decoder
+      description: A command line slow-scan television decoder that works on audio files rather than reading a soundcard (like most other decoders). 
+      url: https://github.com/colaclanth/sstv
   - name: Image
     children:
     - name: ImageMagick
@@ -530,3 +539,10 @@ children:
     - name: Evilgophish
       description: Evilginx2 + Gophish.
       url: https://github.com/fin3ss3g0d/evilgophish
+- name: Crypto
+  children:
+  - name: Strange encodings
+    children:
+    - name: Rockstar encoder/decoder.
+      description: Rockstar is a computer programming language designed for creating programs that are also hair metal power ballads.
+      url: https://codewithrockstar.com/online
