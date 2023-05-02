@@ -401,6 +401,9 @@ children:
       - name: qsv
         description: Ultra-fast CSV data-wrangling toolkit.
         url: https://github.com/jqnatividad/qsv
+      - name: dsq
+        description: Commandline tool for running SQL queries against JSON, CSV, Excel, Parquet, and more.
+        url: https://github.com/multiprocessio/dsq
       - name: marp
         description: Marp (also known as the Markdown Presentation Ecosystem) provides an intuitive experience for creating beautiful slide decks. You only have to focus on writing your story in a Markdown document.
         url: https://marp.app/
@@ -500,6 +503,10 @@ children:
     - name: hoaxshell
       description: Windows reverse shell based on http(s) traffic.
       url: https://github.com/t3l3machus/hoaxshell
+    - name: BypassAV
+      type: learning
+      description: This map lists the essential techniques to bypass anti-virus and EDR.
+      url: https://cmepw.github.io/BypassAV/
   - name: UAC Bypass
     children:
     - name: UACME
