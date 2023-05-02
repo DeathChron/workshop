@@ -8,10 +8,10 @@ children:
     - name: Nmap
       description: Utility for network discovery and security auditing.
       url: https://nmap.org
-    - name: Naabu 
+    - name: Naabu
       description: Port scanning tool written in Go that allows you to enumerate valid ports for hosts in a fast and reliable manner.
       url: https://github.com/projectdiscovery/naabu
-    - name: Masscan 
+    - name: Masscan
       description:  Internet-scale port scanner. It can scan the entire Internet in under 5 minutes, transmitting 10 million packets per second, from a single machine.
       url: https://github.com/robertdavidgraham/masscan
     - name: RustScan
@@ -19,10 +19,10 @@ children:
       url: https://github.com/RustScan/RustScan
   - name: Subdomains
     children:
-    - name: Amass 
+    - name: Amass
       description: Network mapping of attack surfaces and external asset discovery using open source information gathering and active reconnaissance techniques.
       url: https://github.com/OWASP/Amass
-    - name: Subfinder 
+    - name: Subfinder
       description: Subdomain discovery tool that discovers valid subdomains for websites by using passive online sources.
       url: https://github.com/projectdiscovery/subfinder
   - name: Protocols
@@ -48,6 +48,9 @@ children:
         - name: ngrep
           description: PCAP-based tool that allows you to specify an extended regular or hexadecimal expression to match against data payloads of packets.
           url: https://github.com/jpr5/ngrep
+    - name: Scapy
+      description: A powerful interactive packet manipulation program. It is able to forge or decode packets of a wide number of protocols, send them on the wire, capture them, match requests and replies, and much more.
+      url: https://scapy.net/
   - name: Recover
     children:
     - name: Foremost
@@ -130,6 +133,9 @@ children:
       type: wordlist
       description: Lists to discover files and directories.
       url: https://github.com/danielmiessler/SecLists/tree/master/Discovery/Web-Content
+    - name: GooFuzz
+      description: A tool to perform fuzzing with an OSINT approach, managing to enumerate directories, files, subdomains or parameters without leaving evidence on the target's server and by means of advanced Google searches (Google Dorking).
+      url: https://github.com/m3n0sd0n4ld/GooFuzz
   - name: API
     children:
     - name: API Guesser
@@ -151,7 +157,7 @@ children:
     - name: GraphQL
       children:
       - name: graphw00f
-        description: GraphQL server engine fingerprinting utility to learn more about what technology is behind a given GraphQL endpoint. 
+        description: GraphQL server engine fingerprinting utility to learn more about what technology is behind a given GraphQL endpoint.
         url: https://github.com/dolevf/graphw00f
       - name: GraphQL Voyager
         description: Represent any GraphQL API as an interactive graph.
@@ -232,6 +238,14 @@ children:
       type: learning
       description: A list of useful payloads and bypasses for SSRF.
       url: https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Request%20Forgery
+  - name: WebSockets
+    children:
+      - name: sqlmap-websocket-proxy
+        description: Tool to enable blind sql injection attacks against websockets using sqlmap.
+        url: https://github.com/BKreisel/sqlmap-websocket-proxy
+      - name: "STEWS: Security Testing and Enumeration of WebSockets"
+        description: STEWS is a tool suite for security testing of WebSockets.
+        url: https://github.com/PalindromeLabs/STEWS
 - name: Repositories
   children:
   - name: GitHacker
@@ -245,17 +259,21 @@ children:
   - name: John the Ripper
     description: Password security auditing and password recovery tool.
     url: https://github.com/openwall/john
-  - name: Hashcat 
+  - name: Hashcat
     description: Advanced password recovery.
     url: https://github.com/hashcat/hashcat
   - name: SecLists Passwords
-    type: wordlist 
+    type: wordlist
     description: Password lists that can be used by multiple tools when attempting to guess credentials for a given target.
     url: https://github.com/danielmiessler/SecLists/tree/master/Passwords
   - name: Kaonashi project
-    type: wordlist 
+    type: wordlist
     description: Wordlist, rules and masks.
     url: https://github.com/kaonashi-passwords/Kaonashi
+  - name: OneRuleToRuleThemStill
+    type: wordlist
+    description: An revamped and optimised version of OneRuleToRuleThemAll.
+    url: https://github.com/stealthsploit/OneRuleToRuleThemStill
   - name: CeWL
     description: Custom Word List generator.
     url: https://github.com/digininja/CeWL
@@ -264,6 +282,27 @@ children:
     url: https://github.com/Mebus/cupp
 - name: OSINT
   children:
+  - name: Maps
+    children:
+    - name: OSINTmap
+      description: Worldwide map of OSINT tools.
+      url: https://cipher387.github.io/osintmap/
+  - name: Geolocation
+    children:
+    - name: Quick geolocation search
+      description: Simple tool helps save a lot of time when gathering information about geolocation. Enter latitude and longitude (or choose location on map) once and click the buttons with the names of online maps, to quickly jump to it.
+      url: https://cipher387.github.io/quickgeolocationsearch/
+    - name: Geolocation Estimation
+      description: Estimate the geolocation of a picture by dragging or clicking the marker on the world map.
+      url: https://labs.tib.eu/geoestimation/
+    - name: What3words
+      description: A proprietary geocode system designed to identify any location on the surface of the earth with a resolution of about 3 metres.
+      url: https://what3words.com/
+  - name: Disasters
+    children:
+    - name: Fire Information for Resource Management System
+      description: FIRMS distributes Near Real-Time (NRT) active fire data from the Moderate Resolution Imaging Spectroradiometer (MODIS) aboard the Aqua and Terra satellites, and the Visible Infrared Imaging Radiometer Suite (VIIRS) aboard S-NPP and NOAA 20 (formally known as JPSS-1).
+      url: https://firms.modaps.eosdis.nasa.gov/
   - name: Traffic
     children:
     - name: Flightera.net
@@ -299,6 +338,9 @@ children:
     - name: Sherlock
       description: Hunt down social media accounts by username across social networks.
       url: https://github.com/sherlock-project/sherlock
+    - name: Quick hashtags and keywords search
+      description: Simple tool helps save a lot of time when gathering information on social networks. Enter your search query once and click the buttons with the names of social media platforms, to quickly jump to pages to find posts that match your query.
+      url: https://cipher387.github.io/hashtags_and_keywords_social_media_quick_search/
 - name: Linux
   children:
   - name: Utilities
@@ -409,7 +451,7 @@ children:
       - name: pspy
         description: Unprivileged Linux process snooping.
         url: https://github.com/DominicBreuker/pspy
-      - name: pamspy 
+      - name: pamspy
         description: Credentials Dumper for Linux.
         url: https://github.com/citronneur/pamspy
 - name: Windows
@@ -492,7 +534,7 @@ children:
       description: Multi-track audio editor and recorder.
       url: https://www.audacityteam.org
     - name: SSTV Decoder
-      description: A command line slow-scan television decoder that works on audio files rather than reading a soundcard (like most other decoders). 
+      description: A command line slow-scan television decoder that works on audio files rather than reading a soundcard (like most other decoders).
       url: https://github.com/colaclanth/sstv
   - name: Image
     children:
@@ -507,6 +549,19 @@ children:
   - name: Mobile Security Framework (MobSF)
     description: Automated, all-in-one mobile application (Android/iOS/Windows) pen-testing, malware analysis and security assessment framework capable of performing static and dynamic analysis.
     url: https://github.com/MobSF/Mobile-Security-Framework-MobSF
+  - name: apk.sh
+    description: Bash script that makes reverse engineering Android apps easier, automating some repetitive tasks like pulling, decoding, rebuilding and patching an APK.
+    url: https://github.com/ax/apk.sh
+- name: Reversing
+  children:
+  - name: python
+    children:
+    - name:  pyinstxtractor
+      description: A python script to extract the contents of a PyInstaller generated executable file.
+      url: https://github.com/extremecoders-re/pyinstxtractor
+    - name:  unpyc.unpyc3
+      description: A decompiler for Python 3.7+.
+      url: https://github.com/greyblue9/unpyc37-3.10
 - name: Cloud
   children:
   - name: AWS
@@ -517,6 +572,10 @@ children:
       url: https://github.com/ine-labs/AWSGoat
 - name: C2
   children:
+  - name: C2Matrix
+    type: learning
+    description: The goal of C2Matrix is to point you to the best C2 framework for your needs based on your adversary emulation plan and the target environment.
+    url: https://www.thec2matrix.com/matrix
   - name: Metasploit
     description: Ruby-based, modular penetration testing platform that enables you to write, test, and execute exploit code.
     url: https://docs.rapid7.com/metasploit/msf-overview
@@ -529,6 +588,17 @@ children:
   - name: Havoc
     description: A modern and malleable post-exploitation command and control framework.
     url: https://github.com/HavocFramework/Havoc
+  - name: Empire
+    description: Empire is a post-exploitation and adversary emulation framework that is used to aid Red Teams and Penetration Testers.
+    url: https://github.com/BC-SECURITY/Empire
+- name: Webshells
+  children:
+  - name: Kraken
+    description: A modular multi-language webshell.
+    url: https://github.com/kraken-ng/Kraken
+  - name: P0wny-shell
+    description: A single-file PHP shell.
+    url: https://github.com/flozz/p0wny-shell
 - name: Phishing
   children:
   - name: Domains
@@ -551,3 +621,15 @@ children:
     - name: Rockstar encoder/decoder.
       description: Rockstar is a computer programming language designed for creating programs that are also hair metal power ballads.
       url: https://codewithrockstar.com/online
+- name: Containers
+  children:
+  - name: Docker
+    children:
+    - name: DEEPCE
+      description: Docker Enumeration, Escalation of Privileges and Container Escapes (DEEPCE).
+      url: https://github.com/stealthcopter/deepce
+- name: Data
+  children:
+  - name: generatedata.com
+    description: A powerful, feature-rich, random test data generator.
+    url: https://generatedata.com
